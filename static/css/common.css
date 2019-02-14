@@ -1,0 +1,62 @@
+/* CSS Document */
+.req-ide {
+	color: #f56c6c !important;
+    margin-right: 4px;
+}
+
+.btn-default {
+    color: #373a3c !important;
+    background-color: #fff !important;
+    border-color: #ccc !important;
+}
+
+.btn-warning {
+    color: #fff !important;
+    background-color: #f1b53d !important;
+    border-color: #f1b53d !important;
+}
+
+.btn-success {
+    color: #fff !important;
+    background-color: #1bb99a !important;
+    border-color: #1bb99a !important;
+}
+
+.mycss .layui-table-view {
+	margin:0px !important;
+}
+
+.laytable-cell-checkbox {
+    padding-top:5px !important;
+}
+.mycss .layui-form-label {
+    color:#606266;
+    -webkit-box-sizing: initial;
+    box-sizing: initial;
+    /*width: 100px !important;*/
+    font-weight: bold !important;
+}
+.mycss .layui-tab {
+    margin:0px !important;
+}
+
+.mycss .layui-layer-content {
+    overflow: visible;
+}
+.mycss .layui-form-radio{
+    width: 100px !important;
+}
+.mycss .radio60 .layui-form-radio {
+    width: 60px !important;
+}
+.mycss-radio150 .layui-form-radio{
+    width: 150px !important;
+}
+.mycss .CodeMirror {
+    height: 100px !important;
+    border:1px solid #D2D2D2;
+}
+.mycss .layui-form-item .layui-inline {
+    width:49.7%;
+    margin-right:0px !important;
+}

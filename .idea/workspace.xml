@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c8b098c9-c13a-46dc-8f26-1245f854f4ca" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="flowSetup.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/pages/workflow/flowSetup.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="7260">
+              <caret line="330" column="33" lean-forward="false" selection-start-line="330" selection-start-column="24" selection-end-line="330" selection-end-column="33" />
+              <folding>
+                <marker date="1533865131376" expanded="false" signature="9999:10072" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="flowSetup.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/workflow/flowSetup.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="294" column="26" lean-forward="false" selection-start-line="286" selection-start-column="26" selection-end-line="294" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="appConfig.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/js/appConfig.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="3" column="47" lean-forward="false" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="flowModeDesign.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/pages/workflow/flowModeDesign.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3432">
+              <caret line="156" column="43" lean-forward="false" selection-start-line="156" selection-start-column="43" selection-end-line="156" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="flowModeDesign.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/workflow/flowModeDesign.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="9064">
+              <caret line="728" column="36" lean-forward="false" selection-start-line="728" selection-start-column="36" selection-end-line="728" selection-end-column="36" />
+              <folding>
+                <element signature="e#18024#18286#0" expanded="false" />
+                <element signature="e#18325#26153#0" expanded="false" />
+                <element signature="e#26180#33988#0" expanded="false" />
+                <element signature="e#37745#38398#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/common.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="22" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layui.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/plugins/layui/css/layui.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45562">
+              <caret line="2071" column="0" lean-forward="false" selection-start-line="2071" selection-start-column="0" selection-end-line="2071" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>setName:</find>
+      <find>setName =</find>
+      <find>nodeId</find>
+      <find>Export</find>
+      <find>tranName</find>
+      <find>result</find>
+      <find>接收</find>
+      <find>i.data.constructor</find>
+      <find>tableFlowNodePermission</find>
+      <find>txt_lineName</find>
+      <find>NodeType</find>
+      <find>sel_lineReceiveScope</find>
+      <find>txt_lineTrigger</find>
+      <find>selectMenu</find>
+      <find>select-this</find>
+      <find>tranTriggerCss</find>
+      <find>tranTrigger</find>
+      <find>select_icon1</find>
+      <find>select-menu-ul</find>
+      <find>form.selectTriggerCss(0);</find>
+      <find>FlowInfo/GetFlow</find>
+      <find>form.</find>
+      <find>form.init</find>
+      <find>默认</find>
+      <find>rdo_lineTranType</find>
+      <find>.mycss .layui-form-radio</find>
+      <find>rdo_lineTranType_verify</find>
+      <find>rdo_lineIsAuto</find>
+      <find>tranIsMessage</find>
+      <find>.layui-form-item</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/static/plugins/smartflow/default.css" />
+        <option value="$PROJECT_DIR$/static/plugins/smartflow/GooFlow.js" />
+        <option value="$PROJECT_DIR$/static/js/common.js" />
+        <option value="$PROJECT_DIR$/static/pages/workflow/flowSetup.html" />
+        <option value="$PROJECT_DIR$/static/plugins/layui/lay/modules/table.js" />
+        <option value="$PROJECT_DIR$/static/js/workflow/flowSetup.js" />
+        <option value="$PROJECT_DIR$/static/css/common.css" />
+        <option value="$PROJECT_DIR$/static/pages/workflow/flowModeDesign.html" />
+        <option value="$PROJECT_DIR$/static/js/workflow/flowModeDesign.js" />
+        <option value="$PROJECT_DIR$/static/plugins/layui/css/layui.css" />
+        <option value="$PROJECT_DIR$/static/js/appConfig.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="493" />
+    <option name="y" value="19" />
+    <option name="width" value="1218" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="WorkFlowApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WorkFlowApp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WorkFlowApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WorkFlowApp" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WorkFlowApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WorkFlowApp" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WorkFlowApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WorkFlowApp" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="workflow" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WorkFlowApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WorkFlowApp" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WorkFlowApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WorkFlowApp" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="workflow" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="SearchEverywhereHistoryKey" value=".select-menu-div&#9;null&#9;null" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c8b098c9-c13a-46dc-8f26-1245f854f4ca" name="Default" comment="" />
+      <created>1531357282463</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1531357282463</updated>
+      <workItem from="1531357286041" duration="22545000" />
+      <workItem from="1531444302628" duration="19311000" />
+      <workItem from="1531704418871" duration="16494000" />
+      <workItem from="1531790852646" duration="17954000" />
+      <workItem from="1531879165363" duration="2506000" />
+      <workItem from="1531963507702" duration="1951000" />
+      <workItem from="1532049113390" duration="14251000" />
+      <workItem from="1532309673248" duration="13097000" />
+      <workItem from="1532395461632" duration="17331000" />
+      <workItem from="1532481030902" duration="18194000" />
+      <workItem from="1532566986029" duration="13029000" />
+      <workItem from="1532656460121" duration="16012000" />
+      <workItem from="1532913060099" duration="13352000" />
+      <workItem from="1533001561542" duration="5380000" />
+      <workItem from="1533086744706" duration="4765000" />
+      <workItem from="1533194995564" duration="3687000" />
+      <workItem from="1533258164217" duration="6897000" />
+      <workItem from="1533517374537" duration="3472000" />
+      <workItem from="1533690037153" duration="3397000" />
+      <workItem from="1533776585899" duration="1225000" />
+      <workItem from="1533865695561" duration="2237000" />
+      <workItem from="1533882724028" duration="597000" />
+      <workItem from="1534122646862" duration="1501000" />
+      <workItem from="1534211134428" duration="12823000" />
+      <workItem from="1534297131074" duration="4733000" />
+      <workItem from="1534381480260" duration="8043000" />
+      <workItem from="1534727778221" duration="588000" />
+      <workItem from="1534929403004" duration="63000" />
+      <workItem from="1535508063097" duration="2184000" />
+      <workItem from="1535677823840" duration="696000" />
+      <workItem from="1535939525450" duration="1245000" />
+      <workItem from="1536023875406" duration="6751000" />
+      <workItem from="1536282880902" duration="599000" />
+      <workItem from="1536547041393" duration="1254000" />
+      <workItem from="1536808465034" duration="1689000" />
+      <workItem from="1536890376117" duration="745000" />
+      <workItem from="1537147458610" duration="640000" />
+      <workItem from="1538210065363" duration="619000" />
+      <workItem from="1538275469106" duration="87000" />
+      <workItem from="1538979513412" duration="2333000" />
+      <workItem from="1538990407004" duration="618000" />
+      <workItem from="1539842344134" duration="297000" />
+      <workItem from="1540542915852" duration="69000" />
+      <workItem from="1545035395044" duration="2678000" />
+      <workItem from="1545291083896" duration="658000" />
+      <workItem from="1548725944199" duration="2156000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="270753000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="5" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/static/jquery-wizard-master/examples/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11264">
+          <caret line="512" column="14" lean-forward="true" selection-start-line="512" selection-start-column="14" selection-end-line="512" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/appConfig.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="33" column="24" lean-forward="true" selection-start-line="32" selection-start-column="32" selection-end-line="33" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/pages/workflow/flowModeDesign.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1738">
+          <caret line="89" column="39" lean-forward="false" selection-start-line="89" selection-start-column="39" selection-end-line="89" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/workflow/flowModeDesign.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+          <folding>
+            <element signature="e#18024#18286#0" expanded="false" />
+            <element signature="e#18325#26153#0" expanded="false" />
+            <element signature="e#26180#33988#0" expanded="false" />
+            <element signature="e#37745#38398#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/plugins/smartflow/GooFlow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10494">
+          <caret line="477" column="56" lean-forward="false" selection-start-line="477" selection-start-column="56" selection-end-line="477" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GooFlow/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1144">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="54" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/workflow/flowSetup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5742">
+          <caret line="261" column="94" lean-forward="false" selection-start-line="261" selection-start-column="94" selection-end-line="261" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/pages/workflow/flowSetup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7766">
+          <caret line="358" column="8" lean-forward="false" selection-start-line="358" selection-start-column="8" selection-end-line="358" selection-end-column="8" />
+          <folding>
+            <marker date="1533865131376" expanded="false" signature="9999:10072" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/jquery-wizard-master/examples/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10890">
+          <caret line="495" column="37" lean-forward="false" selection-start-line="495" selection-start-column="35" selection-end-line="495" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/workflow/flowSetup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4224">
+          <caret line="214" column="33" lean-forward="false" selection-start-line="214" selection-start-column="33" selection-end-line="214" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="33" column="24" lean-forward="true" selection-start-line="32" selection-start-column="32" selection-end-line="33" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/appConfig.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/workflow/flowModeDesign.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6160">
+          <caret line="362" column="61" lean-forward="false" selection-start-line="362" selection-start-column="61" selection-end-line="362" selection-end-column="61" />
+          <folding>
+            <element signature="e#18024#18286#0" expanded="false" />
+            <element signature="e#18325#26153#0" expanded="false" />
+            <element signature="e#26180#33988#0" expanded="false" />
+            <element signature="e#37745#38398#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/plugins/smartflow/GooFlow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10494">
+          <caret line="477" column="56" lean-forward="false" selection-start-line="477" selection-start-column="56" selection-end-line="477" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GooFlow/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1144">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="54" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/pages/workflow/flowModeDesign.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2816">
+          <caret line="256" column="14" lean-forward="true" selection-start-line="256" selection-start-column="14" selection-end-line="256" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/pages/workflow/flowSetup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6534">
+          <caret line="302" column="42" lean-forward="false" selection-start-line="299" selection-start-column="36" selection-end-line="302" selection-end-column="42" />
+          <folding>
+            <marker date="1533865131376" expanded="false" signature="9999:10072" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/jquery-wizard-master/examples/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10890">
+          <caret line="495" column="37" lean-forward="false" selection-start-line="495" selection-start-column="35" selection-end-line="495" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/workflow/flowSetup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4488">
+          <caret line="204" column="49" lean-forward="true" selection-start-line="204" selection-start-column="49" selection-end-line="204" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="902">
+          <caret line="41" column="27" lean-forward="false" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/appConfig.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/pages/workflow/flowModeDesign.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="60" column="33" lean-forward="true" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/plugins/smartflow/default.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="31" lean-forward="false" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/plugins/smartflow/GooFlow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10494">
+          <caret line="477" column="56" lean-forward="false" selection-start-line="477" selection-start-column="56" selection-end-line="477" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GooFlow/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1144">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="54" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/workflow/flowModeDesign.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1848">
+          <caret line="84" column="27" lean-forward="false" selection-start-line="84" selection-start-column="27" selection-end-line="84" selection-end-column="27" />
+          <folding>
+            <element signature="e#18024#18286#0" expanded="false" />
+            <element signature="e#18325#26153#0" expanded="false" />
+            <element signature="e#26180#33988#0" expanded="false" />
+            <element signature="e#37745#38398#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/pages/workflow/flowSetup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="65" />
+          <folding>
+            <marker date="1533865131376" expanded="false" signature="9999:10072" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/workflow/flowSetup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3872">
+          <caret line="176" column="44" lean-forward="true" selection-start-line="176" selection-start-column="44" selection-end-line="176" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="24" column="26" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="24" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/appConfig.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="2" column="45" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/workflow/flowModeDesign.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1870">
+          <caret line="85" column="42" lean-forward="false" selection-start-line="85" selection-start-column="27" selection-end-line="85" selection-end-column="42" />
+          <folding>
+            <element signature="e#18024#18286#0" expanded="false" />
+            <element signature="e#18325#26153#0" expanded="false" />
+            <element signature="e#26180#33988#0" expanded="false" />
+            <element signature="e#37745#38398#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/plugins/smartflow/GooFlow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10494">
+          <caret line="477" column="56" lean-forward="true" selection-start-line="477" selection-start-column="56" selection-end-line="477" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GooFlow/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1144">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="54" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/pages/workflow/flowModeDesign.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="65" lean-forward="true" selection-start-line="18" selection-start-column="65" selection-end-line="18" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GooFlow/default.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/plugins/smartflow/default.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="31" lean-forward="false" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/plugins/jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/jquery-wizard-master/examples/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="512" column="14" lean-forward="false" selection-start-line="512" selection-start-column="14" selection-end-line="512" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/plugins/smartflow/GooFlow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="60" lean-forward="false" selection-start-line="18" selection-start-column="60" selection-end-line="18" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/plugins/layui/lay/modules/table.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="668">
+          <caret line="1" column="20453" lean-forward="false" selection-start-line="1" selection-start-column="20453" selection-end-line="1" selection-end-column="20453" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/44444/www.kaipan88.com/dyqc/2018/dengji0722newbyyuandianjofwefmzv94jjf/webserver/site.js" />
+    <entry file="file://$PROJECT_DIR$/GooFlow/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="54" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/plugins/layui/css/layui.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45562">
+          <caret line="2071" column="0" lean-forward="false" selection-start-line="2071" selection-start-column="0" selection-end-line="2071" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="22" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/pages/workflow/flowSetup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7260">
+          <caret line="330" column="33" lean-forward="false" selection-start-line="330" selection-start-column="24" selection-end-line="330" selection-end-column="33" />
+          <folding>
+            <marker date="1533865131376" expanded="false" signature="9999:10072" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/pages/workflow/flowModeDesign.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3432">
+          <caret line="156" column="43" lean-forward="false" selection-start-line="156" selection-start-column="43" selection-end-line="156" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/workflow/flowModeDesign.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9064">
+          <caret line="728" column="36" lean-forward="false" selection-start-line="728" selection-start-column="36" selection-end-line="728" selection-end-column="36" />
+          <folding>
+            <element signature="e#18024#18286#0" expanded="false" />
+            <element signature="e#18325#26153#0" expanded="false" />
+            <element signature="e#26180#33988#0" expanded="false" />
+            <element signature="e#37745#38398#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/workflow/flowSetup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="294" column="26" lean-forward="false" selection-start-line="286" selection-start-column="26" selection-end-line="294" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/appConfig.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="47" lean-forward="false" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

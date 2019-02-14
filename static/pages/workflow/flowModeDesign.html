@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>模版设计</title>
+<link rel="stylesheet" href="../../plugins/layui/css/layui.css" media="all" type="text/css" >
+<link rel="stylesheet" href="../../css/font-awesome/css/font-awesome.css" media="all" />
+<link rel="stylesheet"  href="../../css/common.css" media="all" />
+<link rel="stylesheet" href="../../plugins/codemirror/lib/codemirror.css" />
+<link rel="stylesheet" href="../../plugins/codemirror/addon/fold/foldgutter.css" />
+
+<!--[if lt IE 9]>
+<?import namespace="v" implementation="#default#VML" ?>
+<![endif]-->
+
+<link rel="stylesheet" type="text/css" href="../../plugins/smartflow/GeoFlow.css" />
+<link rel="stylesheet" type="text/css" href="../../plugins/smartflow/default.css"/>
+<!--<link rel="stylesheet" type="text/css" href="./js/sweetalert/sweet-alert.css" />-->
+
+<script type="text/javascript" src="../../plugins/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="../../js/common.js"></script>
+
+<script type="text/javascript" src="../../plugins/smartflow/GooFunc.js"></script>
+<script type="text/javascript" src="../../plugins/smartflow/GooFlow.js"></script>
+<script type="text/javascript" src="../../plugins/smartflow/GooFlow_color_design.js"></script>
+
+
+<script type="text/javascript" src="../../plugins/codemirror/lib/codemirror.js"></script>
+<script type="text/javascript" src="../../plugins/codemirror/mode/javascript/javascript.js"></script>
+
+<script src="../../plugins/codemirror/addon/fold/foldcode.js"></script>
+<script src="../../plugins/codemirror/addon/fold/foldgutter.js"></script>
+<script src="../../plugins/codemirror/addon/fold/brace-fold.js"></script>
+<script src="../../plugins/codemirror/addon/fold/xml-fold.js"></script>
+<script src="../../plugins/codemirror/addon/fold/indent-fold.js"></script>
+<script src="../../plugins/codemirror/addon/fold/markdown-fold.js"></script>
+<script src="../../plugins/codemirror/addon/fold/comment-fold.js"></script>
+<script src="../../plugins/codemirror/mode/javascript/javascript.js"></script>
+<script src="../../plugins/codemirror/mode/xml/xml.js"></script>
+<script src="../../plugins/codemirror/mode/css/css.js"></script>
+<script src="../../plugins/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+
+<!--自动补全
+<link rel="stylesheet" href="../../plugins/codemirror/addon/hint/show-hint.css">
+<script src="../../plugins/codemirror/addon/hint/show-hint.js"></script>
+<script src="../../plugins/codemirror/addon/hint/anyword-hint.js"></script>
+&lt;!&ndash;行注释&ndash;&gt;
+<script src="../../plugins/codemirror/addon/comment/comment.js"></script>
+&lt;!&ndash;格式化&ndash;&gt;
+<script src="../../plugins/codemirror/addon/format/format.js"></script>
+&lt;!&ndash;代码检查错误&ndash;&gt;
+<link rel="stylesheet" href="../../plugins/codemirror/addon/lint/lint.css">
+<script src="../../plugins/codemirror/addon/lint/lint.js"></script>
+<script src="../../plugins/codemirror/addon/lint/json-lint.js"></script>-->
+
+</head>
+
+
+<body style="margin:0px;padding:0px;border:none;overflow:hidden;">
+<div id="wf_design" style="margin:0px;padding:0px;border:none;width:100%;height:100%;"></div>
+<!--<input id="submit" type="button" value='导出结果' onclick="Export()"/>
+<textarea id="result" row="6"></textarea>-->
+
+<script type="text/javascript" src="../../plugins/layui/layui.js" charset="utf-8"></script>
+<script type="text/javascript" src="../../js/appConfig.js" charset="utf-8"></script>
+<script type="text/javascript" src="../../js/workflow/flowModeDesign.js" charset="utf-8"></script>
+	
+<!--<script>
+    function Export(){
+        document.getElementById("result").value=JSON.stringify(demo.exportData());
+    }
+</script>-->
+<!--公共组件-->
+<div id="modFlowNodePermissionEdit" style="display:none;" class="mycss">
+    <div style="line-height:40px;padding-left:10px;">
+        编码或名称：
+        <div class="layui-inline">
+            <input class="layui-input layui-input-sm" name="id" id="txt_flowperssion_codeorname" autocomplete="off" style="height: 30px;line-height: 30px;">
+        </div>
+        <button  data-method="queryItems"  class="layui-btn layui-btn-sm" id="btn_flowperssion_query">搜索</button>
+        <input type="hidden" id="hd_permissiontype" value="" />
+    </div>
+    <table class="layui-hide" id="tableFlowNodePermissionEdit" lay-filter="tableFlowNodePermissionEdit" style="margin:0px !important;"></table>
+</div>
+
+
+<!--流转动作表单-->
+<div id="modFlowLineFrom" style="display:none;padding-top: 15px !important;padding-bottom: 0px !important;padding-left: 15px !important;padding-right: 15px !important;" class="layui-form mycss">
+    <div class="layui-form-item">
+        <div class="layui-inline">
+            <label class="layui-form-label"><span class="req-ide">*</span>条件ID<img style="height:18px;margin:-5px 0 0 5px;" src="../../plugins/layui/images/face/question.png" title="例:btn001"></label>
+            <div class="layui-input-block">
+                <input type="text" id="txt_lineId" name="txt_lineId" autocomplete="off" placeholder="请输入条件ID" class="layui-input"  lay-verify="required">
+            </div>
+        </div>
+        <div class="layui-inline">
+            <label class="layui-form-label"><span class="req-ide">*</span>按钮名称</label>
+            <div class="layui-input-block">
+                <input type="text" id="txt_lineTrigger"  name="txt_lineTrigger" autocomplete="off"  placeholder="请输入按钮名称" class="layui-input" lay-verify="required" >
+            </div>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <div class="layui-inline">
+            <label class="layui-form-label"><span class="req-ide">*</span>条件名称</label>
+            <div class="layui-input-block">
+                <input type="text" id="txt_lineName" name="txt_lineName" lay-verify="required" autocomplete="off" placeholder="请输入条件名称" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-inline">
+            <label class="layui-form-label"><span class="req-ide">*</span>按钮样式</label>
+            <div class="layui-input-block">
+                <div class="select-menu">
+                    <div class="select-menu-div">
+                    <input id="txt_lineTriggerCss" name="txt_lineTriggerCss" readonly class="select-menu-input"/>
+                        <i class="fa fa-caret-down" style="margin:5px 10px 0 0"></i>
+                    </div>
+                    <ul class="select-menu-ul" >
+                        <li  class="select-this select_ico_paiqian" css="dispatch">派遣</li>
+                        <li class="select_ico_hecha" css="check">核实核查</li>
+                        <li class="select_ico_lian" css="beCase">立案</li>
+                        <li class="select_ico_yanqi" css="delay">延期</li>
+                        <li class="select_ico_tuihui" css="back">退回</li>
+                        <li class="select_ico_jiean" css="caseEnd">结案</li>
+                        <li class="select_ico_pingjia" css="Comment">评价</li>
+                        <li class="select_ico_zuofei" css="recycled">作废</li>
+                        <li class="select_ico_shoucang" css="favorite">收藏</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--<div class="layui-inline">
+            <label class="layui-form-label"><span class="req-ide">*</span>按钮样式</label>
+            <div class="layui-input-inline">
+                <select id="sel_lineTriggerCss" name="sel_lineTriggerCss" lay-verify="required">
+                    <option value="">==请选择==</option>
+                    <option value="prove">核实分派</option>
+                    <option value="beCase">立案</option>
+                    <option value="dispatch">派遣</option>
+                    <option value="check">核查分派</option>
+                    <option value="delay">延期审批</option>
+                    <option value="urge">督办</option>
+                    <option value="back">退回审批</option>
+                    <option value="caseEnd">结案</option>
+                    <option value="Comment">评价</option>
+                    <option value="recycled">作废</option>
+                    <option value="favorite">收藏</option>
+                </select>
+            </div>
+        </div>-->
+
+    </div>
+
+    <div class="layui-form-item">
+        <div class="layui-inline">
+            <label class="layui-form-label"><span class="req-ide">*</span>默认限时(m)</label>
+            <div class="layui-input-block">
+                <input type="number" id="txt_lineDefeultTime" name="txt_lineDefeultTime" autocomplete="off" placeholder="请输入默认限时" class="layui-input" value="0" lay-verify="required" >
+            </div>
+        </div>
+        <div class="layui-inline">
+            <label class="layui-form-label"><span class="req-ide">*</span>自动分派</label>
+            <input type="hidden" name="rdo_lineIsAuto_verify" id="rdo_lineIsAuto_verify" value="0" lay-verify="rdo_lineIsAuto_verify" placeholder=""/>
+            <div class="layui-input-block radio60">
+                <input type="radio" name="rdo_lineIsAuto" lay-filter="rdo_lineIsAuto" value="1" title="是">
+                <input type="radio" name="rdo_lineIsAuto" lay-filter="rdo_lineIsAuto" value="0" title="否" checked="checked">
+            </div>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <div class="layui-inline">
+            <label class="layui-form-label"><span class="req-ide">*</span>发送短信</label>
+            <input type="hidden" name="rdo_lineIsMessage_verify" id="rdo_lineIsMessage_verify" value="0" lay-verify="rdo_lineIsMessage_verify" placeholder=""/>
+            <div class="layui-input-block radio60">
+                <input type="radio" name="rdo_lineIsMessage" lay-filter="rdo_lineIsMessage" value="1" title="是">
+                <input type="radio" name="rdo_lineIsMessage" lay-filter="rdo_lineIsMessage" value="0" title="否" checked="checked">
+            </div>
+        </div>
+        <div class="layui-inline">
+
+        </div>
+    </div>
+<!--    <div class="layui-form-item">
+        <label class="layui-form-label">动作类型</label>
+        <div class="layui-input-block">
+            <select id="" name="">
+                <option value="">==请选择==</option>
+                <option value="001">核实</option>
+                <option value="002">立案</option>
+                <option value="003">取消立案</option>
+                <option value="005">限期处理</option>
+                <option value="006">申请延期</option>
+                <option value="007">同意延期</option>
+                <option value="008">不同意延期</option>
+                <option value="009">核查</option>
+            </select>
+        </div>
+    </div>-->
+    <div class="layui-form-item">
+
+        <label class="layui-form-label">
+            <span class="req-ide">*</span>动作标记<img style="height:18px;margin:-5px 0 0 5px;" src="../../plugins/layui/images/face/question.png" title="标记用作于统计分析">
+            <input type="hidden" name="rdo_lineTranType_verify" id="rdo_lineTranType_verify" value="000" lay-verify="rdo_lineTranType_verify" placeholder=""/>
+        </label>
+        <div class="layui-input-block" id="div_lineTranType">
+           <!-- <input type="radio" name="rdo_lineTranType" lay-filter="rdo_lineTranType" value="000" title="普通条件" checked="">
+            <input type="radio" name="rdo_lineTranType" lay-filter="rdo_lineTranType" value="shouli" title="受理">
+            <input type="radio" name="rdo_lineTranType" lay-filter="rdo_lineTranType" value="paifaheshi" title="派发核实">
+            <input type="radio" name="rdo_lineTranType" lay-filter="rdo_lineTranType" value="heshi" title="核实">
+            <input type="radio" name="rdo_lineTranType" lay-filter="rdo_lineTranType" value="lian" title="立案">
+            <input type="radio" name="rdo_lineTranType" lay-filter="rdo_lineTranType" value="quxiaolian" title="取消立案">
+            <input type="radio" name="rdo_lineTranType" lay-filter="rdo_lineTranType" value="paiqian" title="派遣">
+            <input type="radio" name="rdo_lineTranType" lay-filter="rdo_lineTranType" value="chuzhi" title="处置">
+            <input type="radio" name="rdo_lineTranType" lay-filter="rdo_lineTranType" value="shenqingyanqi" title="申请延期">
+            <input type="radio" name="rdo_lineTranType" lay-filter="rdo_lineTranType" value="tongyiyanqi" title="同意延期">
+            <input type="radio" name="rdo_lineTranType" lay-filter="rdo_lineTranType" value="butongyiyanqi" title="不同意延期">
+            <input type="radio" name="rdo_lineTranType" lay-filter="rdo_lineTranType" value="paifahecha" title="派发核查">
+            <input type="radio" name="rdo_lineTranType" lay-filter="rdo_lineTranType" value="hecha" title="核查">
+
+            <input type="radio" name="rdo_lineTranType" lay-filter="rdo_lineTranType" value="zuofei" title="作废">
+            <input type="radio" name="rdo_lineTranType" lay-filter="rdo_lineTranType" value="jiean" title="结案">
+            <input type="radio" name="rdo_lineTranType" lay-filter="rdo_lineTranType" value="pingjia" title="评价">-->
+
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <div class="layui-inline">
+            <label class="layui-form-label"><span class="req-ide">*</span>接收方类型</label>
+            <div class="layui-input-block">
+                <select id="sel_lineReceiveType" name="sel_lineReceiveType" lay-verify="required" >
+                    <option value="">==请选择==</option>
+                    <option value="5">上一次处理人</option>
+                    <option value="1">人员</option>
+                    <option value="2">部门</option>
+                    <option value="3">岗位</option>
+                    <option value="4">角色</option>
+                </select>
+            </div>
+        </div>
+        <div class="layui-inline">
+            <label class="layui-form-label"><span class="req-ide">*</span>选择范围</label>
+            <div class="layui-input-block">
+                <select id="sel_lineReceiveScope" name="sel_lineReceiveScope" lay-verify="required" >
+                    <option value="">==请选择==</option>
+                    <option value="0">同级</option>
+                    <option value="1">所有下级</option>
+                    <option value="2">所有上级</option>
+                    <option value="3">下一级</option>
+                    <option value="4">上一级</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="layui-form-item layui-form-text">
+        <label class="layui-form-label"><span class="req-ide">*</span>参数</label>
+        <div class="layui-input-block">
+            <input type="hidden" id="hf_markcodemoni" name="hf_markcodemoni" value="0" >
+            <textarea id="txt_flowline_param" name="txt_flowline_param"></textarea>
+        </div>
+    </div>
+
+</div>
+
+
+<!--节点表单-->
+<div id="divFlowNodeEditDet" style="display:none;height: 100%;width: 100%;" class="mycss mycss-radio150">
+    <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+        <ul class="layui-tab-title">
+            <li class="layui-this">基本设置</li>
+            <li>审核者</li>
+            <li>添加表单</li>
+            <!--<li>表单权限</li>
+            <li>绑定方法</li>-->
+        </ul>
+        <div class="layui-tab-content" style="height:290px;padding: 0px;overflow-y: auto;">
+                <div class="layui-tab-item layui-show" style="padding-top:10px !important;padding-right:10px !important;">
+                        <div class="layui-form-item">
+                            <label class="layui-form-label"><span class="req-ide">*</span>节点ID</label>
+                            <div class="layui-input-block">
+                                <input type="text" id="txt_nodeId" name="txt_nodeId" autocomplete="off" placeholder="请输入节点ID" class="layui-input" lay-verify="required" disabled="disabled">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label"><span class="req-ide">*</span>节点名称</label>
+                            <div class="layui-input-block">
+                                <input type="text" id="txt_nodeName" name="txt_nodeName" autocomplete="off" placeholder="请输入节点名称" class="layui-input" lay-verify="required">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">
+                                <span class="req-ide">*</span>所属环节
+                                <input type="hidden" name="rdo_nodeStep_verify" id="rdo_nodeStep_verify" value="000" lay-verify="rdo_nodeStep_verify" placeholder=""/>
+                            </label>
+                            <div class="layui-input-block" id="div_nodeStep">
+                                <!--<input type="radio" name="rdo_nodeStep" lay-filter="rdo_nodeStep" value="000" title="普通节点" lay-verify="required" checked>
+                                <input type="radio" name="rdo_nodeStep" lay-filter="rdo_nodeStep" value="市级监督指挥中心" title="市级监督指挥中心" lay-verify="required">
+                                <input type="radio" name="rdo_nodeStep" lay-filter="rdo_nodeStep" value="市级专业部门" title="市级专业部门" lay-verify="required">
+                                <input type="radio" name="rdo_nodeStep" lay-filter="rdo_nodeStep" value="区级监督指挥中心" title="区级监督指挥中心" lay-verify="required">
+                                <input type="radio" name="rdo_nodeStep" lay-filter="rdo_nodeStep" value="区级专业部门" title="区级专业部门" lay-verify="required">
+                                <input type="radio" name="rdo_nodeStep" lay-filter="rdo_nodeStep" value="街道监督指挥中心" title="街道监督指挥中心" lay-verify="required">
+                                <input type="radio" name="rdo_nodeStep" lay-filter="rdo_nodeStep" value="街道二级部门" title="街道二级部门" lay-verify="required">
+                                <input type="radio" name="rdo_nodeStep" lay-filter="rdo_nodeStep" value="监督员" title="监督员" lay-verify="required">
+                                <input type="radio" name="rdo_nodeStep" lay-filter="rdo_nodeStep" value="作废" title="作废" lay-verify="required">
+                                <input type="radio" name="rdo_nodeStep" lay-filter="rdo_nodeStep" value="结案" title="结案" lay-verify="required">-->
+
+                            </div>
+
+                        </div>
+                </div>
+                <div class="layui-tab-item" >
+                        <!--<div style="position: relative;">-->
+                        <table class="layui-hide" id="tableFlowNodePermission"  lay-filter="tableFlowNodePermission" style="margin:0px !important;"></table>
+
+                        <div id="flowNodePermissionBtn" style="height:30px;width:100%; background:#fff;padding-left:20px !important;padding-top:4px !important;border-bottom:1px solid #e6e6e6;box-sizing: border-box;">
+                            <button data-method="addItems" data-type="role" data-text="添加角色" class="layui-btn layui-btn-xs layui-btn-normal"><i class="layui-icon"></i>添加角色</button>
+                            <button data-method="addItems" data-type="person" data-text="添加人员" class="layui-btn layui-btn-xs layui-btn-warm"><i class="layui-icon"></i>添加人员</button>
+                            <button data-method="removeItems" class="layui-btn layui-btn-xs layui-btn-danger"><i class="layui-icon"></i>移除</button>
+                        </div>
+                        <!--</div>-->
+                </div>
+                <div class="layui-tab-item" >
+                        <table class="layui-hide" id="tableFlowNodeForm"  lay-filter="tableFlowNodeForm" style="margin:0px !important;"></table>
+
+                        <div id="flowNodeFormBtn" style="height:30px;width:100%; background:#fff;padding-left:20px !important;padding-top:4px !important;border-bottom:1px solid #e6e6e6;box-sizing: border-box;">
+                            <button data-method="addItems" data-type="form" data-text="添加表单" class="layui-btn layui-btn-xs layui-btn-normal"><i class="layui-icon"></i>添加</button>
+                            <button data-method="removeItems" class="layui-btn layui-btn-xs layui-btn-danger"><i class="layui-icon"></i>移除</button>
+                        </div>
+                </div>
+                <!--<div class="layui-tab-item"></div>-->
+                <!--<div class="layui-tab-item" style="padding-top:10px !important;padding-right:10px !important;">
+                        <div class="layui-form-item layui-form-text">
+                            <label class="layui-form-label">方法</label>
+                            <div class="layui-input-block">
+                                <textarea placeholder="" id="txt_flownode_fun" name="txt_remarks" class="layui-textarea"></textarea>
+                            </div>
+                        </div>
+                </div>-->
+        </div>
+    </div>
+</div>
+
+<div id="divFlowLineEditDet" style="display:none;height: 100%;width: 100%;" class="mycss">
+    <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+        <ul class="layui-tab-title">
+            <li class="layui-this">基本设置</li>
+            <!--<li>审核者</li>
+            <li>绑定方法</li>-->
+        </ul>
+        <div class="layui-tab-content layui-form" style="height:290px;padding: 0px;overflow-y: auto;">
+            <div class="layui-tab-item layui-show">
+                <input type="hidden" id="hf_lineId" name="hf_lineId" value="">
+                <input type="hidden" id="hf_lineName" name="hf_lineName" value="">
+                <table class="layui-hide" id="tableFlowLineDet" lay-filter="tableFlowLineDet"  style="margin:0px !important;"></table>
+
+                <div id="flowLineDetBtn" style="height:30px;width:100%; background:#fff;padding-left:20px !important;padding-top:4px !important;border-bottom:1px solid #e6e6e6;box-sizing: border-box;">
+                    <button data-method="addItems"  class="layui-btn layui-btn-xs layui-btn-normal"><i class="layui-icon"></i>添加</button>
+                    <button data-method="editItems"  class="layui-btn layui-btn-xs layui-btn-normal"><i class="layui-icon"></i>编辑</button>
+                    <button data-method="removeItems" class="layui-btn layui-btn-xs layui-btn-danger"><i class="layui-icon"></i>移除</button>
+                </div>
+            </div>
+            <!--<div class="layui-tab-item">审核者</div>
+            <div class="layui-tab-item">
+                <div class="layui-form-item layui-form-text">
+                    <label class="layui-form-label">方法</label>
+                    <div class="layui-input-block">
+                        <textarea placeholder="" id="txt_flowline_fun" name="txt_remarks" class="layui-textarea"></textarea>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+    </div>
+</div>
+<script id="script1">
+{
+  curbtn:"btn000",  //当前条件ID
+  nextbtns:["btn001","btn002"],  //下一步骤条件ID集合
+  usercodes:[],  //用户账号集合
+  rolecodes:[],  //角色编码集合
+  deptcodes:[],  //部门编码集合
+  positions:[]  //岗位编码集合
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+﻿GooFlow.prototype.color={
+  main:"#00B4e1",
+  node:"#ffffff",
+  normalborder:"#a8a8a8",
+  focusborder:"#3892d3",
+  line:"#a8a8a8",
+  mark:"#ff0000",
+  mix:"#b6f700",
+  font:"#000000"
+};

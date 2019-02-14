@@ -1,0 +1,374 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+<title>流程模版安装</title>
+<link href="../../plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+<link href="../../plugins/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" />
+<link href="../../plugins/jquery-wizard/css/wizard.css" rel="stylesheet"  />
+<link href="../../plugins/formvalidation/formValidation.min.css" rel="stylesheet" />
+<!--<link href="../../plugins/wizard/bwizard.min.css" rel="stylesheet" />-->
+
+<link href="../../plugins/layui/css/layui.css" media="all" rel="stylesheet" >
+<link href="../../css/font-awesome/css/font-awesome.css" rel="stylesheet" media="all" />
+<link href="../../css/common.css" rel="stylesheet" media="all" />
+
+<!--
+<script type="text/javascript" src="./plugins/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="./js/common.js"></script>-->
+
+<!-- HTML5 Shiv 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
+<!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
+<!--[if lt IE 9]>
+ <script src="../../plugins/bootstrap/html5shiv.js"></script>
+ <script src="../../plugins/bootstrap/respond.min.js"></script>
+<![endif]-->
+
+<style type="text/css">
+.widget-body {
+		margin:0px;
+		position: relative;
+		height: 840px;
+		width: 1200px;
+		padding: 47px 0 39px 0;
+		border-radius: 0 0 4px 4px;
+}
+
+/* 步骤 */
+.wizard-steps {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    height: 47px;
+    overflow: initial;
+}
+
+.wizard-steps > li.current {
+	background: #fff !important;
+    color: #262626 !important;
+}
+.wizard-steps > li.done {
+    background: #f5f5f5;
+    color: #444 !important;
+}
+.wizard-steps > li {
+	list-style: none;
+	float: left;
+    margin: 0;
+    padding: 0 20px 0 30px;
+    line-height: 46px;
+    position: relative;
+    background: #f5f5f5;
+    color: #d0d0d0;
+    font-size: 16px;
+    cursor: default;
+    -webkit-transition: all .218s ease;
+    -moz-transition: all .218s ease;
+    -o-transition: all .218s ease;
+    transition: all .218s ease;
+	
+}
+/*.wizard-steps > li:hover {
+    color: #d0d0d0 !important;
+}*/
+
+.wizard-steps > li.current:before {
+	bottom: -1px !important;
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: -1px;
+    height: 2px;
+    max-height: 2px;
+    overflow: hidden;
+    background-color: #337ab7 !important;
+    z-index: 10;
+}
+
+.wizard-steps > li.done:before {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    background-color: #1bb99a;
+    left: 0;
+    right: -1px;
+    height: 2px;
+    max-height: 2px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+
+
+.wizard-steps > li .step {
+	border: 2px solid #e5e5e5;
+    font-size: 13px;
+    border-radius: 100%;
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 20px;
+    text-align: center;
+    margin-right: 10px;
+}
+.wizard-steps > li.current .step {
+	border-color: #337ab7 !important;
+    color: #337ab7 !important;
+}
+.wizard-steps > li.current .step:before {
+	color: #337ab7 !important;
+}
+
+.wizard-steps > li.done .step {
+    color: #1bb99a;
+    border-color: #1bb99a;
+}
+
+.wizard-steps > li.done .step:before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 100%;
+    content: "";
+    background-color: #fff;
+    z-index: 3;
+    font-family: FontAwesome;
+    font-size: 12px;
+    color: #1bb99a;
+}
+
+
+.wizard-steps > li .chevron {
+	top: -1px;
+    border: 24px solid transparent;
+    border-left: 14px solid #d4d4d4;
+    border-right: 0;
+    display: block;
+    position: absolute;
+    right: -14px;
+    z-index: 1;
+}
+
+.wizard-steps > li .chevron:before {
+    border: 24px solid transparent;
+    border-left: 14px solid #f5f5f5;
+    border-right: 0;
+    content: "";
+    display: block;
+    position: absolute;
+    right: 1px;
+    top: -24px;
+    -webkit-transition: all .218s ease;
+    -moz-transition: all .218s ease;
+    -o-transition: all .218s ease;
+    transition: all .218s ease;
+}
+.wizard ul li.current .chevron:before {
+    border-left: 14px solid #fff;
+}
+
+.wizard-content {
+
+    border: 0;
+    position: relative;
+    height: 100%;
+    width: 100%;
+	box-sizing: border-box;
+    background-clip: padding-box;
+    padding: 0;
+}
+.lr-form-bottom-button {
+    moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    position: absolute;
+    height: 48px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    text-align: right;
+    padding: 5px 5px 0 0;
+    border-top: 1px solid #eee;
+    border-radius: 0 0 4px 4px;
+    background-color: #F8f8f8;
+    z-index: 3;
+}
+
+.lr-form-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 38px;
+    width: 100%;
+    padding-right: 20px;
+	min-height: 38px;
+    padding: 5px 0 5px 100px;
+}
+.wizard-pane {
+	height:747px;
+}
+</style>
+
+</head>
+
+
+<body style="margin:0px;padding:0px;">
+ <div id="container" class="widget-body  layui-form">
+ 
+		 <div class="wizard" id="wizardFlowSetup">
+			 <ul class="wizard-steps" role="tablist">
+			  <li data-target="#step1" class="active" role="tab">
+						<span class="step">1</span>
+						基本配置
+						<span class="chevron"></span>			  
+			  </li>
+			  <li data-target="#step2" role="tab">
+				
+						<span class="step">2</span>
+						权限设置
+						<span class="chevron"></span>
+			  </li>
+			  <li data-target="#step3" role="tab">
+						<span class="step">3</span>
+						模版设计
+						<span class="chevron"></span>
+			  </li>
+			  <!--<li data-target="#step4" role="tab">
+						<span class="step">4</span>
+						展示设计
+						<span class="chevron"></span>
+			  </li>-->
+			</ul>
+		    <!--<form id="form1" class="layui-form mycss" action="">-->
+			<div class="wizard-content mycss">
+				<div class="wizard-pane active" id="step1" role="tabpanel">
+					    <div style="padding: 15px;width: 930px;">
+							<div class="layui-form-item">
+								<label class="layui-form-label"><span class="req-ide">*</span>模版编码</label>
+								<div class="layui-input-block">
+									<input type="text" id="txt_flowCode" name="txt_flowCode" lay-verify="required" autocomplete="off" placeholder="请输入模版编码" class="layui-input" required >
+								</div>
+							</div>
+							<div class="layui-form-item">
+								<label class="layui-form-label"><span class="req-ide">*</span>模版名称</label>
+								<div class="layui-input-block">
+									<input type="text" id="txt_flowName" name="txt_flowName" lay-verify="required" placeholder="请输入模版名称" autocomplete="off" class="layui-input">
+								</div>
+							</div>
+							<div class="layui-form-item">
+								<label class="layui-form-label"><span class="req-ide">*</span>类别</label>
+								<div class="layui-input-block">
+									<select id="sel_flowType" name="sel_flowType" lay-verify="required" >
+										<!--<option value="">==请选择==</option>
+										<option value="cm001">城市管理类</option>
+										<option value="sm001">社会理管类</option>
+										<option value="ot001">其它</option>-->
+									</select>
+								</div>
+							</div>
+							<div class="layui-form-item layui-form-text">
+								<label class="layui-form-label">备注</label>
+								<div class="layui-input-block">
+									<textarea placeholder="请输入备注" id="txt_flowRemarks" name="txt_flowRemarks" class="layui-textarea"></textarea>
+								</div>
+							</div>
+						</div>
+				</div>
+				
+				<div class="wizard-pane mycss" id="step2" role="tabpanel">
+						
+						<div style="height:40px;width:100%; background:#FFFFFF;">
+								 <div class="layui-form-item" style="margin-bottom:0px !important;" pane="">
+									<div class="layui-input-block" style="margin-left:30px !important;">
+									  <input type="radio" name="pmsType" value="all" lay-filter="pmsType" title="所有成员" checked="" lay-verify="required" >
+									  <input type="radio" name="pmsType" value="assign" lay-filter="pmsType" title="指定成员" lay-verify="required" >
+									</div>
+								  </div>
+						</div>
+						<div style="position: relative;">    
+							<div id="wizard_mark1" style="top: 0;left: 0;width: 100%;height: 100%;z-index: 1989; background-color: #999; opacity: 0.3; position: absolute; display:block;"></div>
+							<table class="layui-hide" id="flowPermissionGrid" style="margin:0px !important;" lay-filter="flowPermissionGrid"></table>
+							
+							<div id="flowPermissionEditBtn" style="height:40px;width:100%; background:#fff;padding-left:30px !important;padding-top:4px !important;border-right:1px solid #e6e6e6;">
+								<!--<button data-method="offset" data-type="auto" class="layui-btn layui-btn-sm"><i class="layui-icon"></i>添加岗位</button>-->
+								<button data-method="addItems" data-type="role" data-text="添加角色" class="layui-btn layui-btn-sm layui-btn-normal"><i class="layui-icon"></i>添加角色</button>
+								<button data-method="addItems" data-type="person" data-text="添加人员" class="layui-btn layui-btn-sm layui-btn-warm"><i class="layui-icon"></i>添加人员</button>
+								<button data-method="removeItems" class="layui-btn layui-btn-sm layui-btn-danger"><i class="layui-icon"></i>移除</button>
+							</div>
+					   </div>
+				</div>
+				<div class="wizard-pane" id="step3" role="tabpanel">
+					<iframe id="flowModeDesign" name="flowModeDesign" src="./flowModeDesign.html" frameborder="no" border="0" scrolling=no style="height:100%;width:100%;margin:0px;padding:0px;overflow:hidden;border:none"></iframe>
+				</div>
+				<!--<div class="wizard-pane" id="step4" role="tabpanel">
+					<iframe id="flowModeShow" name="flowModeShow" src="./flowModeShow.html" frameborder="no" border="0" scrolling=no style="height:100%;width:100%;margin:0px;padding:0px;overflow:hidden;border:none"></iframe>
+				</div>-->
+			</div>
+			<!--</form>-->
+		</div>
+		
+		<div class="lr-form-bottom-button" id="wizard-actions">
+			<button id="btn_prev" class="layui-btn layui-btn-primary">上一步</button>
+			<button id="btn_next" class="layui-btn layui-btn-primary">下一步</button>
+			<button id="btn_draft" class="layui-btn layui-btn-warm"  lay-submit="" lay-filter="noteaction">保存草稿</button>
+			<button id="btn_finish" class="layui-btn layui-btn-normal" lay-submit="" lay-filter="saveaction">保存</button>
+    	</div>
+</div>
+	
+<script type="text/javascript" src="../../plugins/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="../../js/common.js"></script>
+<script type="text/javascript">
+jQuery.browser={};(function(){jQuery.browser.msie=false; jQuery.browser.version=0;if(navigator.userAgent.match(/MSIE ([0-9]+)./)){ jQuery.browser.msie=true;jQuery.browser.version=RegExp.$1;}})();
+</script>
+<script type="text/javascript" src="../../plugins/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../plugins/formvalidation/formValidation.min.js"></script>
+<script type="text/javascript" src="../../plugins/formvalidation/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../plugins/jquery-wizard/jquery-wizard.js"></script>
+<!--<script type="text/javascript" src="../../plugins/wizard/bwizard.min.js" ></script>-->
+
+<script type="text/javascript" src="../../plugins/layui/layui.js" charset="utf-8"></script>
+<script type="text/javascript" src="../../js/appConfig.js" charset="utf-8"></script>
+<script type="text/javascript" src="../../js/workflow/flowSetup.js" charset="utf-8"></script>
+
+<!-- <script type="text/html" id="typeTpl">
+     {{#  if(d.type == 'role'){ }}
+     <span>角色</span>
+     {{#  } else if(d.type == 'person') { }}
+     <span>人员</span>
+     {{#  } }}
+ </script>-->
+
+
+<!--公共组件-->
+<div id="divFlowPermissionEditGrid" style="display:none;" class="mycss">
+<div style="line-height:40px;padding-left:10px;">
+  编码或名称：
+  <div class="layui-inline">
+    <input class="layui-input layui-input-sm" name="txt_flowperssion_codeorname" id="txt_flowperssion_codeorname" autocomplete="off" style="height: 30px;line-height: 30px;">
+  </div>
+  <button  data-method="queryItems"  class="layui-btn layui-btn-sm" id="btn_flowperssion_query">搜索</button>
+  <input type="hidden" id="hd_permissiontype" name="hd_permissiontype" value="" />
+</div>
+<table class="layui-hide" id="flowPermissionEditGrid" lay-filter="flowPermissionEditGrid" style="margin:0px !important;"></table>
+</div>
+
+</body>
+</html>
